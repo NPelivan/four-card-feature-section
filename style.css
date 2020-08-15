@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: hsl(229, 6%, 66%);
+    background-color: hsl(0, 0%, 98%);
+}
+
+header {
+    color: hsl(234, 12%, 34%);
+    text-align: center;
+    margin: 70px 0px 20px 0px;
+}
+
+.first-title {
+    font-weight: 100;
+}
+
+.second-title {
+    font-weight: 600;
+}
+
+
+.paragraph {
+    width: 35%;
+    margin: auto;
+    text-align: center;
+}
+
+h2 {
+    color: hsl(234, 12%, 34%);
+}
+
+.flex-container {
+    display: flex;
+    margin: 3% auto;
+    width: 90%;
+    height: 100%;
+    justify-content: center;
+}
+
+.flex-item {
+    flex: 0 24%;
+    padding: 4vh;
+    box-shadow: 0px 15px 20px 2px hsl(229, 6%, 66%);
+    border-radius: 5px;
+    width: 100%;
+    margin: auto 5vh;
+}
+
+.flex-container > div:nth-of-type(1) {
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+img {
+    display: block;
+    float: right;
+    margin: 17% 0 auto;
+}
+
+.block {
+    display: block;
+    height: 100%;
+    margin: 0;
+    flex: 0 25%;
+}
+
+.block > .flex-item {
+    padding: 4vh;
+    margin: 10% auto;
+    height: 35vh;
+}
+
+.block > .flex-item:nth-of-type(1) {
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.block > .flex-item:nth-child(2) {
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.flex-container > div:nth-of-type(3) {
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+
+@media (max-width: 424px) {
+
+    header {
+        font-size: 3vw;
+    }
+
+    .flex-container {
+        display: block;
+        width: 90%;
+        height: 100%;
+    }
+
+    .block {
+        width: 100%;
+    }
+
+    .block > .flex-item {
+        padding: 5%;
+        height: 30vh;
+    }
+
+    .flex-item {
+        padding: 5%;
+        margin: auto;
+        margin-top: 15%;
+        height: 30vh;
+    }
+
+    .paragraph {
+        width: 90%;
+    }
+}
